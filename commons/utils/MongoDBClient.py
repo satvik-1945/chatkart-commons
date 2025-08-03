@@ -16,11 +16,11 @@ class MongoDBClient:
                 cls._client.admin.command('ping')
                 cls._db = cls._client[DB_name]
                 logger.info("✅ MongoDB connection established.")
-            except errors.ConnectionError as e:
+            except Exception as e:
                 logger.error(f"❌ Failed to connect to MongoDB: {e}")
                 raise
 
-
+    @classmethod
     def get_collection(cls, name):
         if cls._db is None:
             cls.init_connection()
