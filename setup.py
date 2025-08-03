@@ -11,6 +11,6 @@ setup(
     author="Satvik Tejas",
     description="Common utilities for ChatKart AI",
     license="MIT",
-    url="https://github.com/satvik-1945/commons",
+    url="https://github.com/satvik-1945/chatkart-commons",
     python_requires=">=3.8",
 )
