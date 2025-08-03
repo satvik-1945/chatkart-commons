@@ -5,9 +5,8 @@ from commons.config import MONGO_URI, DB_name
 logger = logging.getLogger(__name__)
 
 class MongoDBClient:
-    def __init__(self):
-        _client = None
-        _db = None
+    _client = None
+    _db = None
 
     @classmethod
     def init_connection(cls):
