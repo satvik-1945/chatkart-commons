@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
-        "pymongo>=4.6.0",
+        "pymongo[srv,tls]>=3.8,<4.4",
         "python-dotenv",
     ],
     author="Satvik Tejas",
